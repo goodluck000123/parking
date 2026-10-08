@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화성시남부노인복지관 이용자 차량등록기록부 (현장비치용)</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 10mm 12mm 10mm 12mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      margin: 0;
+      padding: 10px;
+      color: #222;
+      background-color: #fff;
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 8px;
+    }
+    .header-table td {
+      vertical-align: middle;
+      border: none;
+    }
+    .title-area {
+      text-align: center;
+      padding-left: 120px; /* balance approval box */
+    }
+    .main-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px 0;
+      color: #1a365d;
+    }
+    .sub-title {
+      font-size: 11px;
+      color: #555;
+      margin: 0;
+    }
+    .approval-table {
+      border-collapse: collapse;
+      float: right;
+      width: 200px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .approval-table th, .approval-table td {
+      border: 1px solid #718096;
+    }
+    .approval-table th {
+      background-color: #edf2f7;
+      padding: 3px 0;
+      font-weight: 600;
+      color: #2d3748;
+    }
+    .approval-table td {
+      height: 38px;
+    }
+    .approval-side {
+      width: 22px;
+      background-color: #edf2f7;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .notice-bar {
+      background-color: #ebf8fa;
+      border-left: 4px solid #319795;
+      padding: 6px 10px;
+      font-size: 10.5px;
+      color: #234e52;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .notice-bar strong {
+      color: #1d4044;
+    }
+    .main-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+      text-align: center;
+    }
+    .main-table th, .main-table td {
+      border: 1px solid #a0aec0;
+      padding: 4px 3px;
+    }
+    .main-table th {
+      background-color: #2b4c7e;
+      color: #ffffff;
+      font-weight: 700;
+      height: 28px;
+    }
+    .main-table tbody tr {
+      height: 26px;
+    }
+    .main-table tbody tr:nth-child(even) {
+      background-color: #f7fafc;
+    }
+    .footer-notice {
+      margin-top: 8px;
+      background-color: #f7fafc;
+      border: 1px solid #cbd5e0;
+      padding: 6px 10px;
+      font-size: 9px;
+      line-height: 1.45;
+      color: #4a5568;
+    }
+    .footer-notice strong {
+      color: #2d3748;
+    }
+    .btn-print {
+      display: block;
+      margin: 10px auto 20px auto;
+      padding: 10px 24px;
+      background-color: #2b4c7e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .btn-print:hover {
+      background-color: #1a365d;
+    }
+    @media print {
+      .btn-print {
+        display: none !important;
+      }
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="btn-print" onclick="window.print()">🖨️ A4 가로 인쇄하기 (Ctrl + P)</button>
+
+    <table class="header-table">
+      <tr>
+        <td class="title-area">
+          <div class="main-title">화성시남부노인복지관 이용자 차량등록기록부</div>
+          <div class="sub-title">안전한 주차 환경 조성 및 긴급 출차 연락을 위한 등록 대장입니다.</div>
+        </td>
+        <td style="width: 210px;">
+          <table class="approval-table">
+            <tr>
+              <th rowspan="2" class="approval-side">결<br>재</th>
+              <th style="width: 58px;">담 당</th>
+              <th style="width: 58px;">팀 장</th>
+              <th style="width: 58px;">관 장</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div class="notice-bar">
+      <div>※ <strong>안내사항:</strong> 차량 앞유리에 비상연락처를 반드시 비치해 주시고, 장애인 주차구역은 해당 표지 부착 차량만 이용 가능합니다.</div>
+      <div><strong>작성기준일:</strong> 2026년 &nbsp;&nbsp;월 &nbsp;&nbsp;일</div>
+    </div>
+
+    <table class="main-table">
+      <thead>
+        <tr>
+          <th style="width: 32px;">연번</th>
+          <th style="width: 72px;">등록일자</th>
+          <th style="width: 65px;">성 명</th>
+          <th style="width: 68px;">회원번호</th>
+          <th style="width: 95px;">차량번호</th>
+          <th style="width: 95px;">차종 / 색상</th>
+          <th style="width: 105px;">연락처 (휴대폰)</th>
+          <th style="width: 110px;">비상연락처 (보호자)</th>
+          <th style="width: 75px;">차량구분</th>
+          <th style="width: 65px;">소유관계</th>
+          <th style="width: 105px;">이용프로그램/용건</th>
+          <th style="width: 65px;">주차증</th>
+          <th style="width: 55px;">서 명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>17</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+        <tr><td>18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>일반/장애인/경차</td><td>본인/가족</td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="footer-notice">
+      <strong>【개인정보 수집·이용 동의 안내】</strong><br>
+      • <strong>수집항목:</strong> 성명, 연락처, 차량번호, 비상연락처(보호자) | <strong>이용목적:</strong> 복지관 부설주차장 차량 등록 관리 및 긴급출차 연락<br>
+      • <strong>보유 및 이용기간:</strong> 회원 탈퇴 또는 차량 등록 해지 시까지 (개인정보보호법에 의거 안전하게 관리되며 목적 외 용도로 사용되지 않습니다.)
+    </div>
+  </div>
+
+</body>
+</html>
